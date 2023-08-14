@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#display{
+    width: 1000px;
+    word-wrap: break-word;
+    /* white-space: pre-wrap; */
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 600px) {
+    div{
+        width: 100%;
+    }
+    #display{
+        width: 90%;
+    }
+}
